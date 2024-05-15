@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  php:
+    container_name: php
+    build:
+        context: ./
+    ports:
+      - '8080:80'
+    volumes:
+      - ../php:/var/www/html
